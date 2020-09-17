@@ -8,8 +8,8 @@ function App() {
       <Card
         amount="$700.00"
         countries={[
-          { name: "United States", traffic: "3.1GB/∞" },
-          { name: "Russian Federation", traffic: "6.2GB/∞" },
+          { name: "United States", traffic: "3.1 GB/∞" },
+          { name: "Russian Federation", traffic: "6.2 GB/∞" },
         ]}
         ips={["178.124.100.103", "192.60.67.12"]}
         id={7567}
@@ -20,20 +20,20 @@ function App() {
       <Card
         amount="$496.00"
         countries={[
-          { name: "United States", traffic: "3.1GB/∞" },
-          { name: "China", traffic: "6.2GB/∞" },
+          { name: "United States", traffic: "3.1 GB/∞" },
+          { name: "China", traffic: "6.2 GB/∞" },
         ]}
         ips={["178.124.100.103", "192.60.67.12"]}
         id={7567}
         paidTo="17.12.2018, 19:02"
         status="PAUSE"
-        isActive={true}
+        isActive={false}
       />
       <Card
         amount="$700.00"
         countries={[
-          { name: "Argentina", traffic: "3.1GB/∞" },
-          { name: "China", traffic: "2.97GB/∞" },
+          { name: "Argentina", traffic: "3.1 GB/∞" },
+          { name: "China", traffic: "2.97 GB/∞" },
         ]}
         ips={["178.124.100.103", "192.60.67.12"]}
         id={7567}

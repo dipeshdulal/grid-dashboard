@@ -34,11 +34,11 @@ const getIcon = (status: StatusType): IconDefinition => {
 
 export const Card: React.FC<CardProps> = (props) => {
   return (
-    <div className="card">
+    <div className={`card ${props.isActive ? "active" : ""}`}>
       <p className="heading">
         <span>ID {props.id}</span>
         <button className={props.status}>
-          <FontAwesomeIcon icon={getIcon(props.status)}/>
+          <FontAwesomeIcon icon={getIcon(props.status)} />
           {props.status}
         </button>
         <FontAwesomeIcon icon={faDotCircle} />
@@ -52,7 +52,9 @@ export const Card: React.FC<CardProps> = (props) => {
         </tr>
         {props.countries.map((c) => (
           <tr key={c.name}>
-            <td><FontAwesomeIcon icon={faWifi} /> {c.name}</td>
+            <td>
+              <FontAwesomeIcon icon={faWifi} /> {c.name}
+            </td>
             <td>{c.traffic}</td>
           </tr>
         ))}
