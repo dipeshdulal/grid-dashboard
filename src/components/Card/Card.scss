@@ -1,0 +1,29 @@
+.card {
+    .heading {
+        display: grid;
+        grid-template-columns: 60px 100px 1fr;
+        span {
+            color: var(--color-primary);
+            font-family: var(--font-primary);
+            font-weight: 500;
+            font-size: 14px;
+        }
+        & > svg {
+            justify-self: end;
+            color: var(--color-blue-2);
+        }
+    }
+    button {
+        background: var(--color-primary);
+        border: none;
+        border-radius: 20px;
+        padding: 2px 8px;
+        color: white;
+        font-family: var(--font-primary);
+        svg {
+            font-size: 10px;
+            margin-right: 5px;
+        }
+    }
+   
+}

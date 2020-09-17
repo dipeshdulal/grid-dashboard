@@ -1,9 +1,29 @@
+/* Reseting default browser styles */
 * {
   padding: 0;
-  margin: 0;  
+  margin: 0;
 }
 
+/* root of the page ma variable haleko */
 :root {
-  --secondary-font: "Open Sans", sans-serif;
-  --primary-font: "Rubik", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+  --font-primary: "Rubik", sans-serif;
+
+  --color-primary: #0e57c0;
+  --color-primary-light: #ebf9f9;
+  --color-dirty: #cec76d;
+  --color-gray: #a8acaf;
+
+  --color-blue-1: #1667da;
+  --color-blue-2: #55cec7;
+  --color-blue-2-dark: #58cdc5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: normal;
+}
+
+p, div, span {
+  font-family: var(--font-secondary);
 }
