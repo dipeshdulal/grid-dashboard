@@ -17,14 +17,34 @@
   --color-blue-1: #1667da;
   --color-blue-2: #55cec7;
   --color-blue-2-dark: #58cdc5;
-  --color-chips-bg: #EAF8F8;
+  --color-chips-bg: #eaf8f8;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-primary);
   font-weight: normal;
 }
 
-p, div, span {
+p,
+div,
+span {
   font-family: var(--font-secondary);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 20px;
 }

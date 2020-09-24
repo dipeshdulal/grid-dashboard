@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "../Card";
 import "./cardbar.scss";
+import { Button } from "../Button";
 
 interface CardBarProps {
   className?: string;
@@ -9,7 +10,10 @@ interface CardBarProps {
 export const CardBar: React.FC<CardBarProps> = ({ className }) => {
   return (
     <div className={`cardbar ${className}`}>
-        
+      <div className="heading">
+        <h3>Packages</h3>
+        <Button>Buy Packages</Button>
+      </div>
       <Card
         amount="$700.00"
         countries={[
