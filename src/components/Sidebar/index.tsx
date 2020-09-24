@@ -1,6 +1,7 @@
 import React from "react";
 import "./sidebar.scss";
 
+import { MenuItems } from "../MenuItems";
 import { MenuHeading } from "../MenuHeading";
 
 interface SidebarProps {
@@ -18,7 +19,14 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
       </h3>
       <div style={{ width: "100%" }}>
         <MenuHeading>Manage</MenuHeading>
-        
+        <MenuItems
+          items={[
+            { link: "facebook.com", name: "Facebook" },
+            { link: "twitter.com", name: "Twitter" },
+            { link: "instagram.com", name: "Instagram" },
+            { link: "linkedin.com", name: "Linked-In" },
+          ]}
+        />
       </div>
     </div>
   );
