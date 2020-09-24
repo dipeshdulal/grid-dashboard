@@ -1,5 +1,7 @@
 import React from "react";
-import "./sidebar.scss"
+import "./sidebar.scss";
+
+import { MenuHeading } from "../MenuHeading";
 
 interface SidebarProps {
   className?: string;
@@ -8,7 +10,16 @@ interface SidebarProps {
 export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
   return (
     <div className={`sidebar ${className || ""}`}>
-      <h1>Sidebar Contents</h1>
+      <h3>
+        SOAX.
+        <span style={{ color: "var(--color-blue-2)", textAlign: "center" }}>
+          com
+        </span>
+      </h3>
+      <div style={{ width: "100%" }}>
+        <MenuHeading>Manage</MenuHeading>
+        
+      </div>
     </div>
   );
 };
