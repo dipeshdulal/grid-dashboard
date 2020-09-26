@@ -1,0 +1,21 @@
+.menu-items {
+  list-style: none;
+}
+.menu-items a {
+  transition: all 300ms ease;
+  color: white;
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 14px;
+  display: block;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.menu-items svg {
+  color: white;
+}

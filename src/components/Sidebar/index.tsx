@@ -27,6 +27,16 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
             { link: "linkedin.com", name: "Linked-In" },
           ]}
         />
+
+        <MenuHeading>Country</MenuHeading>
+        <MenuItems
+          items={[
+            { link: "instagram.com", name: "Nepal" },
+            { link: "linkedin.com", name: "India" },
+            { link: "twitter.com", name: "America" },
+            { link: "facebook.com", name: "Japan" },
+          ]}
+        />
       </div>
     </div>
   );

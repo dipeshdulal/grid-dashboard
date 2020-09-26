@@ -1,4 +1,7 @@
 import React from "react";
+import "./menuitems.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPassport } from "@fortawesome/free-solid-svg-icons";
 
 interface Item {
   link: string;
@@ -15,7 +18,7 @@ export const MenuItems: React.FC<MenuItemsProps> = ({ items, className }) => {
     <ul className={`menu-items ${className || ""}`}>
       {items.map((item, idx) => (
         <li key={idx}>
-          <a href={item.link}>{item.name}</a>
+          <a href={item.link}><FontAwesomeIcon icon={faPassport} /> {item.name}</a>
         </li>
       ))}
     </ul>
