@@ -24,4 +24,42 @@
       opacity: 0.8;
     }
   }
+  &__bonus {
+    background-color: white;
+    margin: 10px 0;
+    padding: 20px 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas:
+      "icon heading"
+      "icon paragraph";
+    align-items: center;
+    grid-template-columns: 60px 1fr;
+    .icon {
+      grid-area: icon;
+      justify-self: center;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--color-blue-2);
+      border-radius: 60px;
+      font-size: 20px;
+      background: var(--color-primary-light);
+    }
+    h3 {
+      grid-area: heading;
+      font-family: var(--font-primary);
+      font-weight: bold;
+      color: #333;
+      margin-left: 10px;
+    }
+    p {
+      grid-area: paragraph;
+      font-family: var(--font-secondary);
+      color: #999;
+      margin-left: 10px;
+    }
+  }
 }
